@@ -1,7 +1,5 @@
 <template>
-<div>
-    <h1>KAFFE</h1>
-</div>
+    
   
 </template>
 
