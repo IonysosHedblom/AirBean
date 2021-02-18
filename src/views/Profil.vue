@@ -1,12 +1,13 @@
 <template>
   <div class="user">
+    <BurgerMenu />
     <h1>Välkommen till AirBean-familjen!</h1>
     <p>
       Genom att skapa ett konto nedan kan du spara och se din orderhistorik.
     </p>
-    <form action="user-form">
+    <form action="user-form" class="formstyle">
       <label for="submit">Namn</label>
-      <input class="submit1" type="text" v-model="regData.name"/>
+      <input class="submit1" type="text" v-model="regData.name" />
       <label for="submit2">Epost</label>
       <input class="submit2" type="text" v-model="regData.email" />
       <input type="checkbox" />
@@ -16,15 +17,17 @@
 </template>
 
 <script>
+import BurgerMenu from "../Components/BurgerMenu.vue";
+
 export default {
+  components: { BurgerMenu },
   data() {
     return {
       regData: {
-        name: '',
-        email: ''
-      }
-    }
-    
+        name: "",
+        email: "",
+      },
+    };
   },
 
   methods: {
@@ -36,4 +39,14 @@ export default {
 </script>
 
 <style>
+
+.user{
+background-color:#F3E4E1;
+}
+
+.formstyle{
+  background-color:#F3E4E1;
+
+}
+
 </style>

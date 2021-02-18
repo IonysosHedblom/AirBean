@@ -5,6 +5,7 @@ import About from '../views/About.vue'
 import Status from '../views/Status.vue'
 import Profil from '../views/Profil.vue'
 import Meny from '../views/Meny.vue'
+import Nav from '../views/Nav.vue'
 
 
 Vue.use(VueRouter)
@@ -34,6 +35,11 @@ const routes = [
     path: '/meny',
     name: 'Meny',
     component: Meny
+  },
+  {
+    path: '/nav',
+    name: 'Nav',
+    component: Nav
   }
 ]
 
