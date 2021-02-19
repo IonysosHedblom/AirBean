@@ -17,10 +17,17 @@ export default new Vuex.Store({
     regUser: {
       user: {},
       userHistory: []
-    }
-
+    },
+   
   },
   mutations: {
+
+    makeOrder(state) {
+      state.regUser.userHistory.push(state.currentOrder.orderNum)
+      state.regUser.userHistory.push(state.currentOrder.totalPrice)
+      //Skriv efter action
+    },
+
     getMenu(state, menuObj) {
       state.menu.push(...menuObj)
 
@@ -46,11 +53,21 @@ export default new Vuex.Store({
         state.currentOrder.totalPrice += item.price
       })
     },
+    historyOrder(state, historyOrder){
+      state.regUser.userHistory = historyOrder
+    },
+
     regUser(state, userObj) {
       state.regUser.user = userObj
     }
   },
   actions: {
+    async makeOrder({commit}) { //?
+      // const orderId = await API.makeOrder()
+      commit('makeOrder')
+
+    },
+
     async getMenu({ commit }) {
       const menu = await API.fetchProducts()
       commit('getMenu', menu)
@@ -60,6 +77,14 @@ export default new Vuex.Store({
       context.commit('addToOrder', menuItem)
       context.commit('totalPrice')
     },
+
+    async historyOrder({commit}, historyOrder){
+      const {userid, orderid} = historyOrder
+      const history = await API.makeOrder(userid, orderid)
+      commit('historyOrder', history)
+
+    },
+
     async regUser({ commit }, userObj) {
       const { name, email } = userObj
       const user = await API.registerUser(name, email)

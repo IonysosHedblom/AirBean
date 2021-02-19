@@ -1,13 +1,23 @@
 <template>
-  
+  <div>
+    <h1>Din beställning</h1>
+    <CartItem />
+    <button @click="makeOrder">Test</button>
+  </div>
 </template>
 
 <script>
-export default {
+import CartItem from "../Components/CartItem.vue"
 
-}
+export default {
+    components: {CartItem},
+    methods: {
+        makeOrder() {
+            this.$store.dispatch('makeOrder')
+        }
+    }
+};
 </script>
 
 <style>
-
 </style>

@@ -1,6 +1,7 @@
 <template>
   <div class="menu">
     <BurgerMenu />
+    <Order />
     <h1>Meny</h1>
     <Produktinfo ref="produktinfoRef" />
     <ul>
@@ -19,9 +20,10 @@
 import MenuItem from "../Components/MenuItem.vue";
 import Produktinfo from "../Components/Produktinfo.vue";
 import BurgerMenu from "../Components/BurgerMenu.vue"
+import Order from "../Components/Order.vue"
 
 export default {
-  components: { MenuItem, Produktinfo, BurgerMenu },
+  components: { MenuItem, Produktinfo, BurgerMenu, Order },
   computed: {
     menu() {
       return this.$store.getters.loadMenu;

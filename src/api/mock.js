@@ -26,10 +26,19 @@ export async function registerUser(name, email) {
   })
 }
 
-// export async function makeOrder(userId, cardItems){
-//   // Resolve with a orderId, order total price and ETA after a random timer
-//   // Persist order coupled userId in an array in localStorage
-// }
+export async function makeOrder(userId, orderId) {
+  // Resolve with a orderId, order total price and ETA after a random timer
+  // Persist order coupled userId in an array in localStorage
+    const historyOrder = {userId, orderId}
+  if (localStorage.getItem('userObj')) {
+    localStorage.setItem('historyOrder', JSON.stringify(historyOrder))
+    return new Promise(resolve => {
+      setTimeout(() => {
+        resolve(historyOrder)
+      }, 1000)
+    })
+  } 
+}
 
 // export async function fetchOrderHistory(userId){
 //   // Resolve an array of orders after a random timer

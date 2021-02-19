@@ -7,9 +7,9 @@
     </p>
     <form action="user-form" class="formstyle">
       <label for="submit">Namn</label>
-      <input class="submit1" type="text" v-model="regData.name" />
+      <input class="submit1" type="text" v-model="regData.name" placeholder="Type Your Name Here" />
       <label for="submit2">Epost</label>
-      <input class="submit2" type="text" v-model="regData.email" />
+      <input class="submit2" type="text" v-model="regData.email" placeholder="Type your mail address" />
       <input type="checkbox" />
       <button @click.prevent="regUser">GDPR Ok!</button>
     </form>
@@ -47,6 +47,13 @@ background-color:#F3E4E1;
 .formstyle{
   background-color:#F3E4E1;
 
+}
+.user-form{
+   display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 0 1rem;
 }
 
 </style>
