@@ -1,13 +1,13 @@
 <template>
-  <div >
+  <div>
     <div class="navmenu" id="nav">
       <router-link to="/meny">Meny</router-link>
       <hr />
-      <router-link to="/about">Vårt kaffe</router-link>  
+      <router-link to="/about">Vårt kaffe</router-link>
       <hr />
-      <router-link to="/profil">Min profil</router-link> 
+      <router-link to="/profil">Min profil</router-link>
       <hr />
-      <router-link to="/status">Orderstatus</router-link> 
+      <router-link to="/status">Orderstatus</router-link>
       <hr />
     </div>
   </div>
@@ -20,8 +20,7 @@ export default {};
 <style>
 @import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Work+Sans:ital@1&display=swap");
 
-
-.navmenu{
+.navmenu {
   gap: 10px;
   width: 375px;
   height: 667px;
@@ -32,25 +31,19 @@ export default {};
   justify-content: center;
 }
 
-a{
+a {
   font-size: 35px;
   text-decoration: none;
   color: white;
-  font-family: 'PT Serif';
+  font-family: "PT Serif";
   letter-spacing: 0.02rem;
   cursor: pointer;
   transition: 0.4s;
 }
-a:hover{
+a:hover {
   transform: scale(1.2);
 }
 
-hr{
-  
+hr {
 }
-
-
-
-
-
 </style>

@@ -21,7 +21,7 @@
 export default {};
 </script>
 
-<style>
+<style scoped>
 .order-status {
   width: 375px;
   height: 667px;

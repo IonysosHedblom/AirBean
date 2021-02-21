@@ -3,7 +3,7 @@
     <img src="@/assets/intro-graphic-left.svg" alt="" />
 
     <img src="@/assets/airbean-landing.svg" alt="" class="logo" />
-    
+
     <img class="img-right" src="@/assets/intro-graphic-right.svg" alt="" />
   </div>
 </template>
@@ -19,17 +19,13 @@ export default {
       console.log(result);
     },
     gotoNav() {
-      return this.$router.push('/nav') //?
-    }
+      return this.$router.push("/nav"); //?
+    },
   },
 };
 </script>
 
-
-
-<style>
-
-
+<style scoped>
 .landing {
   display: flex;
   width: 375px;
@@ -44,7 +40,5 @@ img.logo {
   position: fixed;
   transform: translate(-50%, -50%);
   /* align-self: center; */
-  
 }
-
 </style>
