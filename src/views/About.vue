@@ -3,9 +3,8 @@
     <BurgerMenu />
     <div class="about">
       <link rel="preconnect" href="https://fonts.gstatic.com" />
-
       <link
-        href="https://fonts.googleapis.com/css2?family=Work+Sans:ital@1&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap"
         rel="stylesheet"
       />
       <h1>Vårt kaffe</h1>
@@ -69,8 +68,8 @@ export default {
 
 @import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Work+Sans:ital@1&display=swap");
 
-.menu-wrapper{
-    background-color: #f3e4e1;
+.menu-wrapper {
+  background-color: #f3e4e1;
 }
 
 .about {
