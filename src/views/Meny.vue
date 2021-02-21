@@ -1,8 +1,8 @@
 <template>
   <div class="menu">
     <BurgerMenu />
-    <Order />
-    <h1>Meny</h1>
+    <Order /><br><br>
+    <h1>Meny</h1><br><br>
     <Produktinfo ref="produktinfoRef" />
     <ul>
       <li
@@ -19,8 +19,8 @@
 <script>
 import MenuItem from "../Components/MenuItem.vue";
 import Produktinfo from "../Components/Produktinfo.vue";
-import BurgerMenu from "../Components/BurgerMenu.vue"
-import Order from "../Components/Order.vue"
+import BurgerMenu from "../Components/BurgerMenu.vue";
+import Order from "../Components/Order.vue";
 
 export default {
   components: { MenuItem, Produktinfo, BurgerMenu, Order },
@@ -40,5 +40,7 @@ export default {
 <style>
 .menu {
   background-color: #f3e4e1;
+  height: 839px;
+  width: 375px;
 }
 </style>

@@ -39,6 +39,6 @@ img.logo {
   left: 50%;
   position: fixed;
   transform: translate(-50%, -50%);
-  /* align-self: center; */
+  align-self: center; margin: right 200px;
 }
 </style>

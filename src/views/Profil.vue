@@ -65,7 +65,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 @import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Work+Sans:ital@1&display=swap");
 .user {
   background-color: #2f2926;

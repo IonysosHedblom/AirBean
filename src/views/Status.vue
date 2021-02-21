@@ -21,7 +21,7 @@
 export default {};
 </script>
 
-<style scoped>
+<style>
 .order-status {
   width: 375px;
   height: 667px;
@@ -37,12 +37,12 @@ h1 {
   font-size: 36px;
   line-height: 43px;
   text-align: center;
-  color: rgba(255, 255, 255, 1);
+  /* color: rgba(255, 255, 255, 1); */
 }
 h2 {
   font-family: "Work Sans";
   font-size: 22px;
   text-align: center;
-  color: rgba(255, 255, 255, 1);
+  /* color: rgba(255, 255, 255, 1); */
 }
 </style>

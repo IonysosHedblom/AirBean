@@ -7,7 +7,9 @@
         href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap"
         rel="stylesheet"
       />
+
       <h1>Vårt kaffe</h1>
+      <br /><br />
 
       <div class="p-container">
         <h3>
@@ -17,6 +19,7 @@
             half and half mazagran. Pumpkin spice.</strong
           >
         </h3>
+        <br /><br />
 
         <p>
           Que dark fair trade, spoon decaffeinated, barista wings whipped, as
@@ -64,15 +67,24 @@ export default {
 </script>
 
 <style>
+
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital@1&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Work+Sans:ital@1&display=swap");
 
 .menu-wrapper {
   background-color: #f3e4e1;
+  height: 1061px;
+  width: 375px;
 }
 
 .about {
+  gap: 10px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background: #f3e4e1;
   height: 1061px;
   width: 375px;
@@ -106,22 +118,22 @@ h1 {
 
   font-family: "PT Serif";
 
-  font-weight: bold;
+  font-weight: 700;
 
   font-size: 42px;
 
-  line-height: 120%;
+  line-height: 12%;
 }
 
-h2,
-h6 {
-  letter-spacing: 0.02rem;
+h3 {
+  font-size: 14px;
 
-  font-family: "PT Serif";
+  font-weight: 600;
+}
+p {
+  font-size: 12px;
 
-  font-weight: bold;
-
-  line-height: 120%;
+  font-weight: 400;
 }
 
 img.Eva-Img {
