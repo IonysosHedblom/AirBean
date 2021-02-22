@@ -37,7 +37,7 @@
         </div>
 
         <!-- <button @click.prevent="regUser">GDPR Ok!</button> -->
-        <AddCard />
+        <OrderBtn />
       </form>
     </section>
   </div>
@@ -45,9 +45,9 @@
 
 <script>
 import BurgerMenu from "../Components/BurgerMenu.vue";
-import AddCard from "../Components/Button.vue";
+import OrderBtn from "../Components/Button.vue";
 export default {
-  components: { BurgerMenu, AddCard },
+  components: { BurgerMenu, OrderBtn },
   data() {
     return {
       regData: {

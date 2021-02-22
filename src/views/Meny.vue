@@ -1,5 +1,12 @@
 <template>
   <div class="menu">
+     <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Serif:wght@700&family=Work+Sans&display=swap" rel="stylesheet">
     <BurgerMenu />
     <Order /><br><br>
     <h1>Meny</h1><br><br>
@@ -42,5 +49,9 @@ export default {
   background-color: #f3e4e1;
   height: 839px;
   width: 375px;
+}
+ul {
+    list-style-type: none;
+    
 }
 </style>

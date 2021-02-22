@@ -1,6 +1,6 @@
 <template>
-  <div class="addcard">
-    <a href="#" class="btn" @click="addCard">Brew me a cup</a>
+  <div class="order-btn">
+    <a href="#" class="btn" @click="addCard"></a>
   </div>
 </template>
 

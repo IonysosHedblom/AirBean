@@ -14,11 +14,15 @@
     <img class="drone" src="@/assets/drone.svg" alt="" />
     <h1>Din beställning är på väg!</h1>
     <h2><strong> 13</strong> minuter</h2>
+    <OrderBtn />
   </div>
 </template>
 
 <script>
-export default {};
+import OrderBtn from "../Components/Button.vue";
+export default {
+  components: { OrderBtn },
+};
 </script>
 
 <style>
@@ -29,7 +33,8 @@ export default {};
   margin: 20px;
 }
 .drone {
-  margin-left: 60px;
+  margin-top: 150px;
+  margin-left: 80px;
 }
 h1 {
   font-family: "PT Serif";
@@ -37,12 +42,12 @@ h1 {
   font-size: 36px;
   line-height: 43px;
   text-align: center;
-  /* color: rgba(255, 255, 255, 1); */
+  margin-top: 15px;
 }
 h2 {
   font-family: "Work Sans";
   font-size: 22px;
   text-align: center;
-  /* color: rgba(255, 255, 255, 1); */
+  margin-top: 15px;
 }
 </style>

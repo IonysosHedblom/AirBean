@@ -1,25 +1,42 @@
 {
     "menu":[
-      {"id":1,"title":"Bryggkaffe","desc":"Bryggd på månadens bönor.","price":39},
+      {
+        "id":1,
+        "title":"Bryggkaffe",
+        "desc":"Bryggd på månadens bönor.",
+        "price":39,
+        "currency":"Kr"},
       {
         "id":2,
         "title":"Caffè Doppio",
         "desc":"Bryggd på månadens bönor.",
-        "price":49
+        "price":49 ,
+        "currency":"Kr"
       },
-      {"id":3,"title":"Cappuccino","desc":"Bryggd på månadens bönor.","price":49},
+      {"id":3,
+        "title":"Cappuccino",
+        "desc":"Bryggd på månadens bönor.",
+        "price":49,
+        "currency":"Kr"},
       {
         "id":4,
         "title":"Latte Macchiato",
         "desc":"Bryggd på månadens bönor.",
-        "price":49
+        "price":49,
+        "currency":"Kr"
       },
       {
         "id":5,
         "title":"Kaffe Latte",
         "desc":"Bryggd på månadens bönor.",
-        "price":54
+        "price":54,
+        "currency":"Kr"
       },
-      {"id":6,"title":"Cortado","desc":"Bryggd på månadens bönor.","price":39}
+      {"id":6,
+        "title":"Cortado",
+        "desc":"Bryggd på månadens bönor.",
+        "price":39,
+        "currency":"Kr"
+      }
     ]
   }
